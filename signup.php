@@ -16,7 +16,7 @@ include 'header.php';
         echo $_SESSION[id];
       }
       else {
-        echo "You are not logged in!";
+        echo "<center><h1>Sign Up!</h2></center>";
       }
      ?>
     <?php
@@ -24,13 +24,13 @@ include 'header.php';
        echo "You are already logged in!";
      }
      else {
-       echo "<form action='includes/signup.inc.php' method='POST'>
+       echo "<center><form action='includes/signup.inc.php' method='POST'>
            <input type='text' name='first' placeholder='Firstname'><br>
            <input type='text' name='last' placeholder='Lastname'><br>
            <input type='text' name='uid' placeholder='Username'><br>
            <input type='password' name='pwd' placeholder='Password'><br>
            <button type='submit'>SIGN UP</button>
-         </form>";
+         </form></center>";
      }
      ?>
 
